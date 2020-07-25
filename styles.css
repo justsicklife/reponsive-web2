@@ -1,0 +1,346 @@
+* {
+    transition: all 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(30, 33, 34);
+}
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(38, 41, 42, 1);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+.container {
+    padding: 0 15px;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-container{
+    line-height: 50px;
+}
+.navber-header {
+    float: left;
+}
+.navbar-nav{
+    margin: 0;
+    padding: 0;
+}
+.navbar-links {
+    float: right;
+}
+.navbar-link {
+    color: #b57d0e;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 23px;
+    letter-spacing: 1px;
+    transition: all .07s ease;
+}
+.navbar-nav > li{
+    list-style-type: none;
+    padding: 15px 12px;
+    display: inline;
+}
+.navbar-nav > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    transition: all .07s ease;
+}
+.navbar-nav::after {
+    content: "";
+    clear: both;
+}
+.title {
+    list-style: none;
+    margin: 0;
+    height: 650px;
+    width: 100%;
+    padding: 150px 0;
+}
+#home {
+    width: 100%;
+    height: 650px;
+    background-image: url(bohemina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#greet {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .2px;
+    transition: all 0.4s ease-in-out;
+}
+#name {
+    font-size: 4.5em;
+    font-weight: 900;
+    color: white;
+    letter-spacing: .2px;
+    height: 80px;
+    padding: 10px 0;
+    transition: all 0.4s ease-in-out;
+}
+#myjob{
+    font-size: 1.9em;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .2px;
+    transition: all 0.4s ease-in-out;
+    margin-top: 30px;
+}
+#knowMore {
+    display: inline-block;
+    padding: 7px 15px;
+    background: linear-gradient(to left,#c2a11d,#dec45b);
+    border-radius: 30px;
+    margin-top: 60px;
+}
+#knowMore > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#myjob::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f7a4";
+    padding: 0 10px;
+    color: orange;
+    transition: all 0.4s ease-in-out;
+}
+#about-me {
+    width: 100%;
+    height: 550px;
+    background-color: #1c1d1f;
+}
+#about-container{
+    margin: 120px 0 0 0;
+}
+.main-title > h2,.main-title > h3 {
+    margin: 0;
+}
+.about-image{
+    background-image: url(bohemina.jpg);
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.about-image-container{
+    padding: 30px;
+    width: 40%;
+    height: 470px;
+    float: left;
+    margin: auto;
+}
+.main-title {
+    float: left;
+    width: 60%;
+}
+.main-title > h2,.main-title > h3{
+    color: white;
+    text-transform: capitalize;
+}
+.main-title > h3::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f7a4";
+    padding: 0 10px;
+    color: orange;
+    transition: all 0.4s ease-in-out;
+}
+.main-title > h2 {
+    font-size: 2.2em;
+}
+.main-title .content p {
+    margin: 0;
+    line-height: 25px;
+    color: rgb(158, 158, 158);
+    font-size: 1em;
+    word-break:break-all;
+    transition: all 0.4s ease-in-out;
+}
+.row {
+    background: rgba(53, 52, 52, 0.123);
+    height: 230px;
+    margin-top: 15px;
+}
+.score-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: space-around;
+}
+
+.score {
+    width: 20%;
+    margin: 0 5%;
+}
+.score > p {
+    font-size: 1.2em;
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+}
+.stars {
+    margin-top: 5px;
+    color: rgb(224, 167, 59);
+    font-size: .9em;
+}
+.my-services{
+    color: white;
+    background: #212121;
+}
+.my-services-container  {
+    padding-top: 50px;
+}
+.my-services-container > h3 {
+    text-transform: capitalize;
+    margin: 0;
+}
+.my-services-container > h3::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f7a4";
+    padding: 0 10px;
+    color: orange;
+}
+.my-services-container > h2 {
+    text-transform: capitalize;
+    margin: 5px 0 30px;
+}
+.my-services-contents{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.my-services-content {
+    width: 31%;
+    height: 45%;
+    background: rgba(41, 40, 40, 0.3);
+    border-radius: 2%;
+}
+.my-services-content > i{
+    font-size: 50px;
+    color: orange;
+}
+.my-services-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-services-content > h3{
+    margin: 20px 0 0 ;
+    text-transform: capitalize;
+}
+.my-services-content > p {
+    text-align: center;
+    margin: 10px 0 ;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+    .about-image-container {
+        width: 50%;
+    }
+    .main-title {
+        width: 50%;
+    }
+    .stars {
+        width: 103px;
+    }
+}
+@media (max-width: 950px) {
+    .container {
+        width: 700px;
+        transition: all 0.4s ease-in-out;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .about-image-container,.main-title{
+        float: none;
+    }
+    #about-me {
+        height: 100%;
+    }
+    .main-title{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .about-image-container{
+        width: 100%;
+        margin: auto;
+    }
+    .row {
+        height: 100%;
+    }
+    .my-services-content {
+        width: 48%;
+        height: 30%;
+    }
+    .my-services-contents {
+        height: 660px;
+    }
+}
+@media (max-width: 685px) {
+    .container {
+        width: 500px;
+        transition: all 0.4s ease-in-out;
+    }
+    .title {
+        font-size: 12px;
+    }
+    .main-title{
+        width: 80%;
+        margin: 0 10%;
+    }
+    .about-image-container{
+        width: 100%;
+        margin: auto;
+    }
+    .score {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    .score-container {
+        justify-content: center;
+    }
+    .stars {
+        width: 100%;
+    }
+    #home {
+        width: 600px;
+    }
+    .my-services-content {
+        width: 100%;
+        height: 15%;
+    }
+    .my-services-contents {
+        height: 1200px;
+    }
+}
